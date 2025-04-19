@@ -1,0 +1,252 @@
+{
+  "🔌 Electronics": [
+    "📱 #Phones",
+    "💻 #Laptops",
+    "🖥️ #Desktops",
+    "📱 #Tablets",
+    "📺 #TV",
+    "📽️ #Projector",
+    "📷 #Cameras"
+  ],
+  "⚡ Appliances": ["🔊 #Audio", "📸 #Photography"],
+  "🧣 Accessories": ["⌚ #Wearables", "🎬 #HomeTheater", "🤖 #OtherGadgets"],
+  "🎁 Gifts": ["👨 #ForHim", "👩 #ForHer", "🧒 #ForKids", "🐾 #ForPets"],
+  "🎉 Special_Occasions": [
+    "💒 #Wedding",
+    "🎂 #Birthdays",
+    "🎓 #Graduations",
+    "💍 #Anniversaries",
+    "🎉 #Holidays"
+  ],
+  "🧵 Hand_Craft": ["🌍 #Cultural", "🖼️ #Decor"],
+  "🏠 Home_&_Kitchen": [
+    "🍽️ #KitchenAndDining",
+    "🛋️ #Furniture",
+    "🛁 #BeddingAndBath",
+    "🏡 #HomeDecor",
+    "🍳 #CookwareAndTableware"
+  ],
+  "👕 Clothing_and_Shoes": [
+    "👔 #MenClothing",
+    "👗 #WomenClothing",
+    "🧒 #KidsClothing",
+    "🏃 #SportClothing",
+    "👞 #MenShoe",
+    "👠 #WomenShoe",
+    "👟 #KidsShoe",
+    "🎿 #SportShoe",
+    "🥾 #Footwear"
+  ],
+  "💎 Bags_and_Jewelry": [
+    "👜 #Handbag",
+    "🎒 #SchoolUniforms",
+    "👜 #WatchesAndBag",
+    "⌚ #MensWatches",
+    "🕙 #WomensWatches",
+    "⌚ #UnisexWatches",
+    "🛠️ #WatchAccessories",
+    "💎 #Jewelry"
+  ],
+  "💄 Beauty_and_Personal_Care": [
+    "💄 #Makeup",
+    "🧴 #SkinCare",
+    "💇 #HairCare",
+    "🌸 #Fragrance",
+    "💅 #FootHandNailCare"
+  ],
+  "🏅 Sports_&_Outdoors": [
+    "🏋️ #ExerciseAndFitness",
+    "🏕️ #OutdoorRecreation",
+    "🤼 #TeamSports",
+    "🥾 #CampingAndHiking",
+    "🚴 #Cycling",
+    "🏄 #WaterSports",
+    "⌚ #FitnessTechnology"
+  ],
+  "📚 Books": [
+    "📖 #Fiction",
+    "📚 #NonFiction",
+    "📚 #ChildrensBooks",
+    "🎓 #Educational",
+    "📚 #ComicsAndGraphicNovels"
+  ],
+  "🧸 Toys_&_Games": [
+    "🧩 #ActionFiguresAndCollectibles",
+    "🧸 #DollsAndAccessories",
+    "🔬 #EducationalToys",
+    "🎲 #BoardGames",
+    "⛱️ #OutdoorPlay"
+  ],
+  "🚗 Automotive": [
+    "🔧 #Accessories",
+    "🛠️ #ToolsAndEquipment",
+    "🎛️ #CarElectronics",
+    "🛞 #TiresAndWheels",
+    "🔩 #ReplacementParts",
+    "🚗 #CarsAndTrucks",
+    "🏍️ #MotorcyclesAndThreeWheelers",
+    "🚚 #HeavyVehicles"
+  ],
+  "🏭 Industrial_&_Scientific": [
+    "🔬 #LaboratoryEquipment",
+    "📏 #TestAndMeasurement",
+    "🏭 #IndustrialSupplies",
+    "🛡️ #SafetyAndSecurity",
+    "🔭 #ScientificInstruments"
+  ],
+  "🛎 Services": [
+    "🏡 #HomeServices",
+    "💼 #ProfessionalServices",
+    "❤️ #HealthAndWellnessServices",
+    "🎓 #EducationalAndTutoringServices",
+    "💻 #DigitalAndITServices",
+    "💰 #FinancialServices",
+    "🎨 #CreativeServices",
+    "🎉 #EventAndPersonalServices",
+    "🚚 #Delivery",
+    "✏️ #Design",
+    "🗣️ #Consulting",
+    "📋 #Coarse",
+    "🏋️ #Training"
+  ],
+  "🏘  For_Sale": [
+    "🏠 #House",
+    "🏢 #Apartment",
+    "🏬 #Condominium",
+    "🏘️ #StudioApartment",
+    "🌍 #Land",
+    "🏰 #Villa",
+    "🏢 #OfficeSpace",
+    "🏬 #RetailSpace",
+    "🏭 #Warehouse",
+    "🏭 #IndustrialProperty",
+    "🏨 #Hotel",
+    "🏙️ #MixedUseProperty",
+    "🏗️ #SpecialPurposeProperty"
+  ],
+  "🏨 For_Rent": [
+    "🏠 #House",
+    "🏢 #Apartment",
+    "🏬 #Condominium",
+    "🏘️ #StudioApartment",
+    "🏰 #Villa",
+    "🏢 #OfficeSpace",
+    "🏬 #RetailSpace",
+    "📦 #Warehouse",
+    "🏭 #IndustrialProperty",
+    "🏨 #Hotel",
+    "🏙️ #MixedUseProperty",
+    "🏗️ #SpecialPurposeProperty"
+  ],
+  "🍼 Baby_and_Kids": [
+    "👕 #ClothingBabyAndKids",
+    "👟 #ShoesBabyAndKids",
+    "🧸 #ToysAndGames",
+    "🩲 #DiapersAndWipers",
+    "🍼 #FeedingEssentials",
+    "🛏️ #NurseryAndFurniture",
+    "🩺 #HealthAndSafety",
+    "🛁 #BathingAndSkincare",
+    "📚 #BooksAndMedia",
+    "🚼 #StrollersAndBabyGear"
+  ],
+  "🍽 Food_and_Beverages": [
+    "🍎 #FruitsAndVegetables",
+    "🌾 #GrainsAndLegumes",
+    "🍲 #EthiopianFood",
+    "🍖 #MeatAndSeafood",
+    "🥛 #DairyProductsAndAlternatives",
+    "🍞 #BakedGoods",
+    "🍪 #SnacksAndConfectioneries",
+    "🥤 #NonAlcoholicBeverages",
+    "🌶️ #SpicesAndCondiments",
+    "🥗 #OrganicAndHealthyFoods"
+  ],
+  "🖇 Office_Supplies": [
+    "✏️ #WritingInstruments",
+    "📄 #PaperProducts",
+    "📎 #DeskAccessories",
+    "🗂️ #FilingAndOrganization",
+    "🖨️ #PrintersAndInk",
+    "📚 #BooksAndReferences",
+    "📐 #Stationery",
+    "💼 #OfficeFurniture"
+  ],
+  "❤️ Health_and_Wellness": [
+    "💊 #MedicineAndSupplements",
+    "🩺 #MedicalEquipment",
+    "🧘 #FitnessAndExercise",
+    "🧴 #PersonalCare",
+    "🧠 #MentalHealth",
+    "🍎 #NutritionAndDiet",
+    "😷 #HealthSafetyProducts"
+  ],
+  "🐾 Pet_Supplies": [
+    "🐶 #PetFood",
+    "🛏️ #PetBedding",
+    "🧸 #PetToys",
+    "🧼 #GroomingAndCare",
+    "💊 #HealthAndWellness",
+    "🏠 #PetHousingAndAccessories",
+    "🐾 #TrainingAndBehavior",
+    "🧳 #TravelAndOutdoor",
+    "🐶 #Dogs",
+    "🐱 #Cats",
+    "🦜 #Birds",
+    "🐠 #Fish",
+    "🐍 #ReptilesAndAmphibians",
+    "🐄 #Livestock"
+  ],
+  "🎮 Gaming": [
+    "🎮 #VideoGames",
+    "🕹️ #Consoles",
+    "🎧 #GamingAccessories",
+    "🖥️ #PCGaming",
+    "🪙 #BoardGamesAndCards",
+    "🎲 #RolePlayingGames",
+    "🎯 #VRAndAR",
+    "💻 #GameDownloadsAndSubscriptions"
+  ],
+  "🛠️ Tools_&_Home_Improvement": [
+    "🔨 #PowerTools",
+    "🛠️ #HandTools",
+    "🚿 #Plumbing",
+    "💡 #Electrical",
+    "🪟 #Lighting",
+    "🚪 #Hardware",
+    "🧰 #ToolStorage",
+    "🏗️ #BuildingMaterials"
+  ],
+  "🎶 Musical_Instruments": [
+    "🎸 #StringInstruments",
+    "🥁 #Percussion",
+    "🎹 #KeyboardAndPiano",
+    "🎷 #WindInstruments",
+    "🎧 #RecordingEquipment",
+    "🎤 #Microphones",
+    "🎛️ #DJAndStudioGear"
+  ],
+  "🖼️ Art_&_Collectibles": [
+    "🖼️ #FineArt",
+    "🖌️ #CraftSupplies",
+    "🗿 #Antiques",
+    "🧩 #Memorabilia",
+    "📦 #Collectibles"
+  ],
+  "🌾 Agriculture": [
+    "🌾 #FarmingTools",
+    "🚜 #Machinery",
+    "🧪 #FertilizersAndPesticides",
+    "🌱 #SeedsAndSaplings",
+    "🐄 #LivestockAndPoultry",
+    "🥬 #Produce",
+    "🧃 #AgriProducts"
+  ],
+  "🏗️ Construction_&_Real_Estate_Equipment": [
+    "🧱 #BuildingMaterials",
+    "🏗️ #HeavyMachinery",
+    "👷 #ConstructionTools",
+    "🧰 #ConstructionSupplies"
+  ],
+  "📦 Other": ["🎁 #Miscellaneous"]
+}
