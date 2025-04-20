@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
+    "dev": "node index.js",
     "build": "echo \"Build process not defined\""
   },
   "author": "",
@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "dotenv": "^10.0.0",
+    "express": "^5.1.0",
     "mongoose": "^6.0.0",
     "node-telegram-bot-api": "^0.56.0"
   },

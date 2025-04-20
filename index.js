@@ -10,6 +10,18 @@ const Product = require("./db/models/product");
 
 const bot = new TelegramBot(process.env.BOT_TOKEN, { polling: true });
 
+const express = require("express");
+const app = express();
+
+app.get("/", (req, res) => {
+  res.send("Telegram bot is running");
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Fake server running on port ${PORT}`);
+});
+
 // Connect to DB
 mongoose
   .connect(process.env.MONGO_URI)
