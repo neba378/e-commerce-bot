@@ -1,13 +1,8 @@
 const User = require("../../db/models/user");
 const Product = require("../../db/models/product");
 const axios = require("axios");
-
+const { sanitizeMarkdownV2 } = require("../../utils/helper");
 // Function to sanitize MarkdownV2 input
-const sanitizeMarkdownV2 = (text) => {
-  if (!text) return "";
-  return String(text).replace(/([*_`[\]()~>#+=|{}.!\\])/g, "\\$1");
-};
-
 const start = async (bot, msg, payload) => {
   const chatId = msg.chat.id;
   const userId = msg.from.id;

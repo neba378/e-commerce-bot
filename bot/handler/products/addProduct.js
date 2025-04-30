@@ -3,16 +3,12 @@ const axios = require("axios");
 const Product = require("../../../db/models/product");
 const Seller = require("../../../db/models/seller");
 const categories = require("../../../data/categories.json");
-const { limitWords } = require("../../../utils/helper");
+const { limitWords, sanitizeMarkdownV2 } = require("../../../utils/helper");
 
 const getCategories = () => Object.keys(categories);
 const getSubCategories = (category) => categories[category] || [];
 
 // Function to sanitize MarkdownV2 input
-const sanitizeMarkdownV2 = (text) => {
-  if (!text) return "";
-  return String(text).replace(/([*_`[\]()~>#+=|{}.!\\])/g, "\\$1");
-};
 
 const addProduct = async (bot, msg) => {
   const sessions = {};
@@ -755,4 +751,4 @@ const addProduct = async (bot, msg) => {
   }
 };
 
-module.exports = { addProduct };
+module.exports = { addProduct, sanitizeMarkdownV2 };
