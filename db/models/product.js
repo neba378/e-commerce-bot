@@ -13,7 +13,7 @@ const productSchema = new mongoose.Schema({
   specificCategory: { type: String, required: true },
   shortDescription: { type: String },
   detailedDescription: { type: String },
-  price: { type: Number, required: true },  
+  price: { type: String, required: true },
   location: { type: String },
   contactInfo: {
     phone: { type: String, required: true },

@@ -55,10 +55,16 @@ const addProduct = async (bot, msg) => {
 
     // Validation functions
     const validatePrice = (priceText) => {
-      const isValidFormat = /^[0-9]+(\.[0-9]+)?$/.test(priceText);
-      if (!isValidFormat) return false;
-      const price = parseFloat(priceText);
-      return price > 0;
+      if (!priceText || priceText.trim() === "") {
+        return "Price not set";
+      }
+      const isNumeric = /^[0-9]+(\.[0-9]+)?$/.test(priceText);
+      if (isNumeric) {
+        const price = parseFloat(priceText);
+        return price > 0 ? price : false;
+      }
+      // Allow non-numeric values like "Negotiable"
+      return priceText.trim().length > 0 ? priceText.trim() : false;
     };
 
     const validateDescription = (desc) => {
@@ -436,11 +442,12 @@ const addProduct = async (bot, msg) => {
           if (!validatePrice(priceMsg.text)) {
             bot.sendMessage(
               chatId,
-              "❌ Invalid price. Please enter a valid number greater than 0:"
+              "❌ Invalid price. Please enter a valid number greater than 0 or valid string!"
             );
             steps.price();
           } else {
-            sessions[tgId].price = parseFloat(priceMsg.text);
+            // sessions[tgId].price = parseFloat(priceMsg.text);
+            sessions[tgId].price = priceMsg.text;
             sessions[tgId].history.push("price");
             if (sessions[tgId].fromEdit) {
               sessions[tgId].fromEdit = false;

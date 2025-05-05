@@ -1,5 +1,6 @@
 const Product = require("../../../db/models/product");
 const Seller = require("../../../db/models/seller");
+const { sanitizeMarkdownV2 } = require("./addProduct");
 const { deleteProduct } = require("./deleteProduct");
 const { updateProduct } = require("./updateProduct");
 
@@ -36,7 +37,14 @@ const listMyProducts = async (bot, msg) => {
     }
 
     for (const product of products) {
-      const caption = `🛍 *${product.name}*\n💰 ${product.price}\n📍 ${product.generalCategory} > ${product.specificCategory}\n📝 ${product.shortDescription}`;
+      const caption = `🛍 *${sanitizeMarkdownV2(
+        product.name
+      )}*\n💰 ${sanitizeMarkdownV2(product.price)}\n📍 ${sanitizeMarkdownV2(
+        product.generalCategory
+      )} > ${sanitizeMarkdownV2(
+        product.specificCategory
+      )}\n📝 ${sanitizeMarkdownV2(product.shortDescription)}`;
+
       const inlineKeyboard = [
         [
           { text: "Update", callback_data: `update_${product._id}` },
