@@ -1,6 +1,7 @@
 require("dotenv").config();
 const Product = require("../../../db/models/product");
 const Seller = require("../../../db/models/seller");
+const { sanitizeMarkdownV2 } = require("./addProduct");
 
 const deleteProduct = async (bot, msg, productId) => {
   const tgId = msg.from.id;
@@ -18,8 +19,15 @@ const deleteProduct = async (bot, msg, productId) => {
     }
 
     await Product.updateOne({ _id: productId }, { isActive: false });
-
-    const soldOutCaption = `🛍 *${product.name}* (Sold Out)\n💰 ${product.price}\n📍 ${product.generalCategory} > ${product.specificCategory}\n📝 ${product.shortDescription}\n⚠️ This product is no longer available.`;
+    const soldOutCaption =
+      `⚠️ *SOLD OUT*\n\n` +
+      `🛍 *${sanitizeMarkdownV2(product.name)}*\n` +
+      `💰 ${sanitizeMarkdownV2(String(product.price))}\n` +
+      `📍 ${sanitizeMarkdownV2(
+        product.generalCategory
+      )} \\> ${sanitizeMarkdownV2(product.specificCategory)}\n` +
+      `📝 ${sanitizeMarkdownV2(product.shortDescription)}\n\n` +
+      `⚠️ This product is no longer available.`;
 
     await bot.editMessageMedia(
       {

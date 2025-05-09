@@ -142,15 +142,29 @@ const updateProduct = async (bot, msg, productId) => {
                 }
               );
 
-              const caption = `🛍 *${sessions[tgId].name}*\n💰 ${sessions[tgId].price}\n📍 ${sessions[tgId].generalCategory} > ${sessions[tgId].specificCategory}\n📝 ${sessions[tgId].shortDescription}`;
+              const postCaption =
+                `🛒 \\#${sanitizeMarkdownV2(
+                  product.generalCategory.split(" ")[1]
+                )} \\>\\> ${sanitizeMarkdownV2(product.specificCategory)}\n` +
+                `*${sanitizeMarkdownV2(product.name)}*\n\n` +
+                `📝${sanitizeMarkdownV2(
+                  `_Description:_\n`
+                )}_${sanitizeMarkdownV2(
+                  limitWords(product.shortDescription)
+                )}_\n` +
+                `\\.  \\.  \\.  \\.  \\.  \\.  \\.  \\.  \\.\n\n` +
+                `📍 Location: *${sanitizeMarkdownV2(product.location)}*\n` +
+                `💰 Price: *${sanitizeMarkdownV2(String(product.price))}*`;
               const opts = {
-                parse_mode: "Markdown",
+                parse_mode: "MarkdownV2",
                 reply_markup: {
                   inline_keyboard: [
                     [
                       {
-                        text: "View More & Buy",
-                        url: `https://t.me/${process.env.BOT_USERNAME}?start=${productId}`,
+                        text: "SHOP/view",
+                        url: `https://t.me/${
+                          process.env.BOT_USERNAME
+                        }?start=${product._id.toString()}`,
                       },
                     ],
                   ],

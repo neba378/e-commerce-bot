@@ -18,7 +18,8 @@ function limitWords(text, maxWords = 15) {
 
 const sanitizeMarkdownV2 = (text) => {
   if (!text) return "";
-  return String(text).replace(/([_*\[\]()~`>#+=|{}.!\\-])/g, "\\$1");
+  return String(text).replace(/([_*\[\]()~`>#+=|{}.!\\\-])/g, "\\$1");
 };
+
 
 module.exports = { limitWords, sanitizeMarkdownV2 };
