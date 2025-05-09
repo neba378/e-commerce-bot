@@ -274,7 +274,7 @@ const updateProduct = async (bot, msg, productId) => {
 
       additionalImages: () => {
         sendMessageWithKeyboard(
-          "📸 Send up to 3 new additional images, one by one. Type 'done' when finished.",
+          "📸 Send up to 3 new additional images, \nType 'done' when finished.",
           [],
           true
         );

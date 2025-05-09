@@ -77,7 +77,7 @@ const addProduct = async (bot, msg) => {
     // Reset session and notify user
     const resetSession = () => {
       delete sessions[tgId];
-      bot.sendMessage(chatId, "❌ Product listing canceled.");
+      bot.sendMessage(chatId, "✅ Product listing canceled.");
     };
 
     // Check for cancel command or button
@@ -96,7 +96,7 @@ const addProduct = async (bot, msg) => {
     // Step handlers
     const steps = {
       primaryImage: () => {
-        sendMessageWithKeyboard("📸 Please upload the primary image");
+        sendMessageWithKeyboard("📸 Upload 1 main image only.");
         bot.once("message", async (photoMsg) => {
           if (checkCancel(photoMsg.text, () => {})) return;
           let fileId;
@@ -179,7 +179,7 @@ const addProduct = async (bot, msg) => {
           sessions[tgId].additionalImageUrls = [];
         }
         sendMessageWithKeyboard(
-          "📸 Send up to 3 additional images. Type 'done' when finished.",
+          "📸 Send up to 3 additional images. \nType 'done' when finished.",
           [],
           true
         );
