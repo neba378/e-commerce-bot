@@ -3,6 +3,7 @@ const axios = require("axios");
 const Product = require("../../../db/models/product");
 const Seller = require("../../../db/models/seller");
 const categories = require("../../../data/categories.json");
+const { sanitizeMarkdownV2 } = require("./addProduct");
 
 const getCategories = () => Object.keys(categories);
 const getSubCategories = (category) => categories[category] || [];
