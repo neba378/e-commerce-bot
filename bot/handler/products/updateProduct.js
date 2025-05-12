@@ -146,17 +146,24 @@ const updateProduct = async (bot, msg, productId) => {
 
               const caption =
                 `🛒 \\#${sanitizeMarkdownV2(
-                  product.generalCategory.split(" ")[1]
-                )} \\>\\> ${sanitizeMarkdownV2(product.specificCategory)}\n` +
-                `*${sanitizeMarkdownV2(product.name)}*\n\n` +
+                  sessions[tgId].generalCategory.split(" ")[1]
+                )} \\>\\> ${sanitizeMarkdownV2(
+                  sessions[tgId].specificCategory
+                )}\n` +
+                `*${sanitizeMarkdownV2(sessions[tgId].name)}*\n\n` +
                 `📝${sanitizeMarkdownV2(
                   `_Description:_\n`
                 )}_${sanitizeMarkdownV2(
-                  limitWords(product.shortDescription)
+                  limitWords(sessions[tgId].shortDescription)
                 )}_\n` +
                 `\\.  \\.  \\.  \\.  \\.  \\.  \\.  \\.  \\.\n\n` +
-                `📍 Location: *${sanitizeMarkdownV2(product.location)}*\n` +
-                `💰 Price: *${sanitizeMarkdownV2(String(product.price))}*`;
+                `📍 Location: *${sanitizeMarkdownV2(
+                  sessions[tgId].location
+                )}*\n` +
+                `💰 Price: *${sanitizeMarkdownV2(
+                  String(sessions[tgId].price)
+                )}*`;
+
               const opts = {
                 parse_mode: "MarkdownV2",
                 reply_markup: {
@@ -164,9 +171,7 @@ const updateProduct = async (bot, msg, productId) => {
                     [
                       {
                         text: "SHOP/view",
-                        url: `https://t.me/${
-                          process.env.BOT_USERNAME
-                        }?start=${product._id.toString()}`,
+                        url: `https://t.me/${process.env.BOT_USERNAME}?start=${productId}`,
                       },
                     ],
                   ],
@@ -178,7 +183,7 @@ const updateProduct = async (bot, msg, productId) => {
                   type: "photo",
                   media: sessions[tgId].primaryImageUrl,
                   caption,
-                  parse_mode: "Markdown",
+                  parse_mode: "MarkdownV2",
                 },
                 {
                   chat_id: process.env.CHANNEL_ID,
@@ -192,7 +197,7 @@ const updateProduct = async (bot, msg, productId) => {
                   type: "photo",
                   media: sessions[tgId].primaryImageUrl,
                   caption,
-                  parse_mode: "Markdown",
+                  parse_mode: "MarkdownV2",
                 },
                 {
                   chat_id: process.env.GROUP_ID,
