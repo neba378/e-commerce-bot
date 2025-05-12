@@ -4,6 +4,7 @@ const Product = require("../../../db/models/product");
 const Seller = require("../../../db/models/seller");
 const categories = require("../../../data/categories.json");
 const { sanitizeMarkdownV2 } = require("./addProduct");
+const { limitWords } = require("../../../utils/helper");
 
 const getCategories = () => Object.keys(categories);
 const getSubCategories = (category) => categories[category] || [];
@@ -143,7 +144,7 @@ const updateProduct = async (bot, msg, productId) => {
                 }
               );
 
-              const postCaption =
+              const caption =
                 `🛒 \\#${sanitizeMarkdownV2(
                   product.generalCategory.split(" ")[1]
                 )} \\>\\> ${sanitizeMarkdownV2(product.specificCategory)}\n` +
